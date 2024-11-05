@@ -33,7 +33,7 @@ The application utilizes two API keys and a search engine ID. The first key is f
 ```
 
 ## Testing
-Feel free to test your API keys by runnign the ```api_test.py``` application with the following command:
+Feel free to test your API keys by running the ```api_test.py``` application with the following command:
 ```bash
 python test_api.py
 ```
