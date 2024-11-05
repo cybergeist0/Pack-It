@@ -1,0 +1,3 @@
+Replace this line with your Gemini API key
+Replace this line with your custom google search engine API key
+Replace this line with the search engine ID
