@@ -26,7 +26,7 @@ pip install requests google-generativeai
 ```
 3. ####  API Key Setup
 The application utilizes two API keys and a search engine ID. The first key is for Gemini - Google's generative AI that is used to make decisions about the items and their placements. The second key is for a custom search engine that is used to search the web for the dimensions of the items. Lastly, the search engine ID is to identify the exact search engine being used in this project (the ```cx``` component). To add these keys, create a file called ```key.txt``` and paste the three keys in the file with this syntax:
-```txt
+```
 <Gemini API Key>
 <Google Custom Search API Key>
 <Search Engine ID>
