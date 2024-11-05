@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pack-It: The Optimal Suitcase Organizer</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .notecard {
+        max-width: 800px;
+        background-color: #ffffff;
+        padding: 20px 30px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin: 20px;
+    }
+    h1 {
+        color: #2a3f54;
+    }
+    h2, h3, h4 {
+        color: #3d556b;
+    }
+    ul {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+    li {
+        margin: 5px 0;
+    }
+    code {
+        background-color: #e6e6e6;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-size: 0.95em;
+    }
+    pre {
+        background-color: #f5f7fa;
+        padding: 10px;
+        border-left: 3px solid #2a3f54;
+        border-radius: 5px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+</style>
+</head>
+<body>
+
+<div class="notecard">
+    <h1>Pack-It: The Optimal Suitcase Organizer</h1>
+
+    <p><strong>PackIt</strong> is an intelligent suitcase organization application that helps users efficiently pack their suitcases by suggesting optimal item placements, folding methods, and estimated weights and volumes. Using advanced AI technology and online search capabilities, <strong>Pack-It</strong> minimizes the need for user input by automatically fetching dimensions and weight estimates for items.</p>
+
+    <h2>Features</h2>
+    <ul>
+        <li><strong>Automatic Item Dimension & Weight Fetching</strong>: Searches the web to gather item dimensions and weights based on minimal user input.</li>
+        <li><strong>User Confirmation</strong>: Prompts users to confirm fetched data, allowing them to refine the search if necessary.</li>
+        <li><strong>Optimal Packing Suggestions</strong>: Recommends where to place each item in the suitcase and how to fold it for maximum space utilization.</li>
+        <li><strong>Total Space & Weight Calculation</strong>: Calculates the total weight and remaining space in the suitcase after packing all items.</li>
+        <li><strong>Professional User Interface</strong>: Clean and user-friendly interface built with Tkinter.</li>
+    </ul>
+
+    <h2>How It Works</h2>
+    <ol>
+        <li><strong>Web Search Integration</strong>: Uses Google’s Custom Search API to fetch snippets about the item’s dimensions and weight based on the name provided by the user.</li>
+        <li><strong>AI-Powered Analysis</strong>: Uses a Generative Language Model to analyze the search results and estimate the item's dimensions and weight.</li>
+        <li><strong>Packing Strategy</strong>: Once all items are confirmed, the AI organizes them within the suitcase, calculates total space and weight, and suggests how to fold each item and where to place it.</li>
+    </ol>
+
+    <h2>Requirements</h2>
+    <ul>
+        <li>Python 3.6+</li>
+        <li>API keys for Google Custom Search API and Google Generative Language Model API (Gemini)</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <ol>
+        <li><strong>Clone or download this repository.</strong></li>
+        <li><strong>Install the required Python packages:</strong>
+            <pre><code>pip install requests google-generativeai</code></pre>
+        </li>
+        <li><strong>API Key Setup</strong><br>The application utilizes two API keys and a search engine ID. The first key is for Gemini - Google's generative AI that is used to make decisions about the items and their placements. The second key is for a custom search engine that is used to search the web for the dimensions of the items. Lastly, the search engine ID is to identify the exact search engine being used in this project (the <code>cx</code> component). To add these keys, create a file called <code>key.txt</code> and paste the three keys in the file with this syntax:
+            <pre><code>&lt;Gemini API Key&gt;
+&lt;Google Custom Search API Key&gt;
+&lt;Search Engine ID&gt;</code></pre>
+        </li>
+    </ol>
+
+    <h2>Testing</h2>
+    <p>Feel free to test your API keys by running the <code>api_test.py</code> application with the following command:</p>
+    <pre><code>python test_api.py</code></pre>
+    <p>This command should execute the testing script which searches the web for a topic and then feeds that information into Gemini. The language model then parses the information and provides the user with a summary. If this all goes well, then the <code>key.txt</code> file is perfectly initialized.</p>
+
+    <h2>Usage</h2>
+    <p>Once all environmental factors have been properly established and set up, the command to run the main program is</p>
+    <pre><code>python main.py</code></pre>
+    <p>This command will start the program which features a graphical user interface. Users are first prompted to enter the dimensions of their suitcase, and then they can add separate items. The app will scour the web to find the dimensions of these items, so it's best if the user is as specific as possible (e.g., Lenovo IdeaPad Flex 5 instead of Laptop). The application will confirm the dimensions with the user before adding them to the list of items. Once all the items are added, the user is to press the button located towards the right to organize the suitcase. The list of items along with their dimensions are all thoughtfully processed to find the optimum way to place them, as well as an enumeration of detailed instructions on how to do so.</p>
+
+    </div>
+
+</body>
+</html>
