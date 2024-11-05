@@ -1,4 +1,4 @@
-# Pack-It - The Optimal Suitcase Organizer
+# Pack-It: The Optimal Suitcase Organizer
 
 **PackIt** is an intelligent suitcase organization application that helps users efficiently pack their suitcases by suggesting optimal item placements, folding methods, and estimated weights and volumes. Using advanced AI technology and online search capabilities, **PackIt** minimizes the need for user input by automatically fetching dimensions and weight estimates for items.
 
