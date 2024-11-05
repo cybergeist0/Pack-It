@@ -32,4 +32,16 @@ The application utilizes two API keys and a search engine ID. The first key is f
 <Search Engine ID>
 ```
 
-##
+## Testing
+Feel free to test your API keys by runnign the ```api_test.py``` application with the following command:
+```bash
+python test_api.py
+```
+This command should execute the testing script which searches the web for a topic and then feeds that information into Gemini. The language model then parses the information and provides the user with a summary. If this all goes well, then the ```key.txt``` file is perfectly initialized.
+
+## Usage
+Once all environmental factors have been properly established and set up, the command to run the main program is
+```bash
+python main.py
+```
+This command will start the program which is features a graphical user interface. Users are first prompted to enter the dimensions of their suitcase, and then they can add seperate items. The app will scower the web to find the dimensions of these items, so it's best if the user is as specific as possible (Ex. Lenovo IdeaPad Flex 5 instead of Laptop). The application will confirm the dimensions with the user before adding them to the list of items. Once all the items are added, the user is to press the button located towards the right to organize the suitcase. The list of items along with their dimensions are all thoughtfully processed to find the optimum way to place them, as well as an enumeration of detailed instructions on how to do so.
