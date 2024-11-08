@@ -19,6 +19,8 @@
 - API keys for Google Custom Search API and Google Generative Language Model API (Gemini)
 
 ## Installation
+##### IMPORTANT!
+In order to download this project, you must fill out a request form linked in the license of this repository. This is required by law!
 1. #### Clone or download this repository.
 2. #### Install the required Python packages:
 ```bash
